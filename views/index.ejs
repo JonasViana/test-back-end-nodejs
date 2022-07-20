@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.webp" alt="Logo" class="logo__header" />
+      <img
+        src="../images/pesquisa-de-lupa.png"
+        alt="Lupa"
+        width="30px"
+        height="30px"
+        class="lupa__busca"
+      />
+      <div>
+        <input type="text" />
+        <button>Busca</button>
+      </div>
+    </header>
+    <main>
+      <form action="" method="post">
+        <div class="cadastro">
+          <h3>Cadastro</h3>
+          <p>
+            Ja possui conta?
+            <strong
+              ><a href="/login" style="text-decoration: none"
+                >Clique aqui</a
+              ></strong
+            >
+          </p>
+          <label for="">Usuario</label>
+          <input type="text" placeholder="Usuario" />
+          <label for="">E-mail</label>
+          <input type="text" placeholder="E-mail" />
+          <label for="">Repita o e-mail</label>
+          <input type="text" placeholder="Repita o e-mail" />
+          <label for="">Senha</label>
+          <input type="text" placeholder="Senha" />
+          <label for="">Repita a senha</label>
+          <input type="text" placeholder="Repita a senha" />
+          <p>
+            Ao clicar em “Criar Conta”, eu aceito que li e aceitei os Termos de
+            Uso e Políticas de Privacidade
+          </p>
+          <button>Cadastrar</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
