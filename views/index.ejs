@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
@@ -20,9 +19,13 @@
       </div>
     </header>
     <main>
-      <form action="" method="post">
+
+      <form action="/users/criar" method="POST">
         <div class="cadastro">
           <h3>Cadastro</h3>
+          <% if (typeof erro !== 'undefined') { %>
+            <p><%= erro %></p>
+            <% } %> 
           <p>
             Ja possui conta?
             <strong
@@ -32,20 +35,20 @@
             >
           </p>
           <label for="">Usuario</label>
-          <input type="text" placeholder="Usuario" />
+          <input type="text" placeholder="Usuario" name="usuario"/>
           <label for="">E-mail</label>
-          <input type="text" placeholder="E-mail" />
+          <input type="text" placeholder="E-mail" name="email" />
           <label for="">Repita o e-mail</label>
-          <input type="text" placeholder="Repita o e-mail" />
+          <input type="text" placeholder="Repita o e-mail" name="confirmarEmail" />
           <label for="">Senha</label>
-          <input type="text" placeholder="Senha" />
+          <input type="password" placeholder="Senha" name="senha" />
           <label for="">Repita a senha</label>
-          <input type="text" placeholder="Repita a senha" />
+          <input type="password" placeholder="Repita a senha" name="confirmarSenha"/>
           <p>
             Ao clicar em “Criar Conta”, eu aceito que li e aceitei os Termos de
             Uso e Políticas de Privacidade
           </p>
-          <button>Cadastrar</button>
+          <button type="submit">Cadastrar</button>
         </div>
       </form>
     </main>
