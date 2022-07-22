@@ -7,5 +7,15 @@
         "usuario": "jonasviana@email.com",
         "email": "jonasviana@email.com",
         "senha": "$2b$10$xXlPhWRJOuJkS9T/EQMiBev4qq.MGD.s2LhqPeXLk3K5QP0RSp34q"
+    },
+    {
+        "usuario": "jonas viana",
+        "email": "jonasviana2@email.com",
+        "senha": "$2b$10$qbdp32SnCWY0KzIz6oJ/YOHOZGpjr5JS/GcuyWFriTE3aF8our4y."
+    },
+    {
+        "usuario": "jonas viana",
+        "email": "jonas@email.com",
+        "senha": "$2b$10$zmiHnYTfNLTITVYoRikwz.ztcWNsx1sCOP.CH2XESh5lyib/WZyvO"
     }
 ]

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <img src="../images/logo.webp" alt="Logo" class="logo__header" />
+    <img src="../images/pesquisa-de-lupa.png" alt="Lupa" width="30px" height="30px" class="lupa__busca" />
+    <div>
+      <input type="text" />
+      <button>Busca</button>
+    </div>
+    <div class="isLoged">
+      <% if(typeof usuario==='undefined' ){ %>
+        <a class="btn" href="/login">Login</a>
+        <% } else { %>
+          <h2>Olá <%= usuario.usuario %>
+          </h2>
+          <a class="logout" href="/main/logout">Logout</a>
+          <% }%>
+    </div>
+  </header>
+  <main class="main__frases">
+    <div class="titulo__frases">
+      <h1>Frases de nossos usuarios</h1>
+      <p>cerca de ? frases</p>
+      <p>Poste suas ideias <a href="/post">aqui</a></p>
+    </div>
+    <div class="lista__frases">
+      <div>
+        <div class="frases">
+          <p>frase do usuario</p>
+          <p>usuario</p>
+          <button>curtir</button>
+        </div>
+        <div class="frases">
+          <p>frase do usuario</p>
+          <p>usuario</p>
+          <button>curtir</button>
+        </div>
+        <div class="frases">
+          <p>frase do usuario</p>
+          <p>usuario</p>
+          <button>curtir</button>
+        </div>
+      </div>
+      <div>
+        <div class="frases">
+          <p>frase do usuario</p>
+          <p>usuario</p>
+          <button>curtir</button>
+        </div>
+        <div class="frases">
+          <p>frase do usuario</p>
+          <p>usuario</p>
+          <button>curtir</button>
+        </div>
+        <div class="frases">
+          <p>frase do usuario</p>
+          <p>usuario</p>
+          <button>curtir</button>
+        </div>
+      </div>
+      <div>
+        <div class="frases">
+          <p>frase do usuario</p>
+          <p>usuario</p>
+          <button>curtir</button>
+        </div>
+        <div class="frases">
+          <p>frase do usuario</p>
+          <p>usuario</p>
+          <button>curtir</button>
+        </div>
+        <div class="frases">
+          <p>frase do usuario</p>
+          <p>usuario</p>
+          <button>curtir</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
