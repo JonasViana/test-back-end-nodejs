@@ -4,7 +4,7 @@ var loginController = require ('../controllers/loginController')
 
 /* GET login page. */
 router.get('/', function (req, res, next) {
-  res.render('login')
+  res.render('login', {usuario:req.session.usuario})
 })
 
 router.post("/", loginController.store)

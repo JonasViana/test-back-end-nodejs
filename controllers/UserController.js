@@ -17,6 +17,12 @@ let UserController = {
         return res.render('index', {erro:'Email já utilizado , utilize outro'})
     }
 
+    const usuarioExistente = usuariosModel.some(findUser => findUser.usuario === usuario)
+
+    if (usuarioExistente){
+        return res.render('index', {erro:'Usuario já utilizado , utilize outro'})
+    }
+
     const user = {
         usuario,
         email,

@@ -1,9 +1,10 @@
-var express = require('express');
+const express = require('express');
 const loginController = require('../controllers/loginController');
-var router = express.Router();
+const router = express.Router();
+const frases = require ('../database/frases.json')
 
 router.get('/', function(req, res, next) {
-   res.render('main' , {usuario:req.session.usuario});
+   res.render('main' , { frases, usuario:req.session.usuario} );
 });
 
 router.get('/logout', loginController.logout)

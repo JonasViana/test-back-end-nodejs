@@ -18,11 +18,9 @@ const loginController = {
 
         req.session.usuario = usuario
 
-        console.log(usuario)
-
         res.redirect('/main')
     },
-    logout: async (req, res) => {
+    logout: (req, res) => {
         req.session.destroy()
 
         return res.redirect('/main')

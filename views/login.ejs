@@ -11,17 +11,21 @@
   </head>
   <body>
     <header>
-      <img src="../images/logo.webp" alt="Logo" class="logo__header" />
-      <img
-        src="../images/pesquisa-de-lupa.png"
-        alt="Lupa"
-        width="30px"
-        height="30px"
-        class="lupa__busca"
-      />
+      <a href="/main">Home</a>
       <div>
-        <input type="text" />
-        <button>Busca</button>
+        <form action="/busca/busca" method="post">
+          <input type="text" name="busca"/>
+          <button type="submit">Busca</button>
+        </form>
+      </div>
+      <div class="isLoged">
+        <% if(typeof usuario==='undefined' ){ %>
+          <a class="btn" href="/login">Login</a>
+          <% } else { %>
+            <h2>Olá <a href="/perfil"><%= usuario.usuario %></a>
+            </h2>
+            <a class="logout" href="/main/logout">Logout</a>
+            <% }%>
       </div>
     </header>
     <main>

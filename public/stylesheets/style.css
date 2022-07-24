@@ -4,12 +4,35 @@ body {
   font-family: 'barlow';
 }
 
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color:rgb(5, 9, 236)
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  width: 5rem;
+  height: 1.5rem;
+}
+
+button:hover{
+  background-color: rgb(5, 9, 236);
+  color: white;
+}
+
 
 header{
   padding: 1rem 0 0 10rem;
   display: flex;
   border-bottom: 1px solid gray;
   align-items: center;
+  justify-content: space-around;
+  height: 8vh;
 }
 
 header input{
@@ -20,9 +43,10 @@ header input{
 
 main{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 90vh;
+  
 }
 
 .lupa__busca{
@@ -101,11 +125,13 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 21rem;
-  height: 9.3rem;
+  width: 30rem;
+  height: 11rem;
   border: 1px solid grey;
   margin-bottom: 1rem;
   margin-right: 1rem;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 .form__frases{
@@ -122,8 +148,13 @@ main{
 .form__post{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .form__post button{
   margin-top: 1rem;
+}
+
+.perfil{
+  display: flex;
 }

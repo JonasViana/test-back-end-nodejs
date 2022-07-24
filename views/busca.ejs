@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <a href="/main">Home</a>
+    <div>
+      <form action="/busca/busca" method="post">
+        <input type="text" name="busca"/>
+        <button type="submit">Busca</button>
+      </form>
+    </div>
+    <div class="isLoged">
+      <% if(typeof usuario==='undefined' ){ %>
+        <a class="btn" href="/login">Login</a>
+        <% } else { %>
+          <h2>Olá <a href="/perfil">
+              <%= usuario.usuario %>
+            </a>
+          </h2>
+          <a class="logout" href="/main/logout">Logout</a>
+          <% }%>
+    </div>
+  </header>
+  <main class="main__frases">
+    <div class="titulo__frases">
+      <h1>Resultado de busca</h1>
+      <p>Poste suas ideias <a href="/post">aqui</a></p>
+    </div>
+    <div class="lista__frases">
+      <div>
+        <% if(typeof filterBusca==='undefined' ){ %>
+          <p>Sem resultados disponiveis :(</p>
+          <% } else { %>
+            <div class="frases">
+              <p>
+                <%= filterBusca.frase %> 
+              </p>
+              <p>
+                <%= filterBusca.user  %> 
+              </p>
+              <p> Likes : <%= filterBusca.like  %> </p>
+            </div>
+            <% }%>
+  </main>
+</body>
+
+</html>

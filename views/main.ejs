@@ -14,17 +14,20 @@
 
 <body>
   <header>
-    <img src="../images/logo.webp" alt="Logo" class="logo__header" />
-    <img src="../images/pesquisa-de-lupa.png" alt="Lupa" width="30px" height="30px" class="lupa__busca" />
+    <a href="/main">Home</a>
     <div>
-      <input type="text" />
-      <button>Busca</button>
+      <form action="/busca/busca" method="post">
+        <input type="text" name="busca"/>
+        <button type="submit">Busca</button>
+      </form>
     </div>
     <div class="isLoged">
       <% if(typeof usuario==='undefined' ){ %>
         <a class="btn" href="/login">Login</a>
         <% } else { %>
-          <h2>Olá <%= usuario.usuario %>
+          <h2>Olá <a href="/perfil">
+              <%= usuario.usuario %>
+            </a>
           </h2>
           <a class="logout" href="/main/logout">Logout</a>
           <% }%>
@@ -33,60 +36,185 @@
   <main class="main__frases">
     <div class="titulo__frases">
       <h1>Frases de nossos usuarios</h1>
-      <p>cerca de ? frases</p>
       <p>Poste suas ideias <a href="/post">aqui</a></p>
     </div>
     <div class="lista__frases">
       <div>
-        <div class="frases">
-          <p>frase do usuario</p>
-          <p>usuario</p>
-          <button>curtir</button>
-        </div>
-        <div class="frases">
-          <p>frase do usuario</p>
-          <p>usuario</p>
-          <button>curtir</button>
-        </div>
-        <div class="frases">
-          <p>frase do usuario</p>
-          <p>usuario</p>
-          <button>curtir</button>
-        </div>
+        <% if(typeof frases[frases.length - 1].frase==='undefined' ){ %>
+          <div class="frases">
+            <p>
+              Poste novas frases :)
+            </p>
+          </div>
+          <% } else { %>
+            <div class="frases">
+              <p>
+                <%= frases[frases.length - 1].frase %>
+              </p>
+              <p>
+                <%= frases[frases.length - 1].user %>
+              </p>
+              <a href="/perfil/like/<%= frases[frases.length - 1].id %>">Curtir</a>
+              <p>Likes : <%= frases[frases.length - 1].like %>
+              </p>
+            </div>
+            <% }%>
+              <% if(typeof frases[frases.length - 2].frase==='undefined' ){ %>
+                <div class="frases">
+                  <p>
+                    Poste novas frases :)
+                  </p>
+                </div>
+                <% } else { %>
+                  <div class="frases">
+                    <p>
+                      <%= frases[frases.length - 2].frase %>
+                    </p>
+                    <p>
+                      <%= frases[frases.length - 2].user %>
+                    </p>
+                    <a href="/perfil/like/<%= frases[frases.length - 2].id %>">Curtir</a>
+                    <p>Likes : <%= frases[frases.length - 2].like %>
+                    </p>
+                  </div>
+                  <% }%>
+                    <% if(typeof frases[frases.length - 3].frase==='undefined' ){ %>
+                      <div class="frases">
+                        <p>
+                          Poste novas frases :)
+                        </p>
+                      </div>
+                      <% } else { %>
+                        <div class="frases">
+                          <p>
+                            <%= frases[frases.length - 3].frase %>
+                          </p>
+                          <p>
+                            <%= frases[frases.length - 3].user %>
+                          </p>
+                          <a href="/perfil/like/<%= frases[frases.length - 3].id %>">Curtir</a>
+                          <p>Likes : <%= frases[frases.length - 3].like %>
+                          </p>
+                        </div>
+                        <% }%>
       </div>
       <div>
-        <div class="frases">
-          <p>frase do usuario</p>
-          <p>usuario</p>
-          <button>curtir</button>
-        </div>
-        <div class="frases">
-          <p>frase do usuario</p>
-          <p>usuario</p>
-          <button>curtir</button>
-        </div>
-        <div class="frases">
-          <p>frase do usuario</p>
-          <p>usuario</p>
-          <button>curtir</button>
-        </div>
+        <% if(typeof frases[frases.length - 4].frase==='undefined' ){ %>
+          <div class="frases">
+            <p>
+              Poste novas frases :)
+            </p>
+          </div>
+          <% } else { %>
+            <div class="frases">
+              <p>
+                <%= frases[frases.length - 4].frase %>
+              </p>
+              <p>
+                <%= frases[frases.length - 4].user %>
+              </p>
+              <a href="/perfil/like/<%= frases[frases.length - 4].id %>">Curtir</a>
+              <p>Likes : <%= frases[frases.length - 4].like %>
+              </p>
+            </div>
+            <% }%>
+              <% if(typeof frases[frases.length - 5].frase==='undefined' ){ %>
+                <div class="frases">
+                  <p>
+                    Poste novas frases :)
+                  </p>
+                </div>
+                <% } else { %>
+                  <div class="frases">
+                    <p>
+                      <%= frases[frases.length - 5].frase %>
+                    </p>
+                    <p>
+                      <%= frases[frases.length - 5].user %>
+                    </p>
+                    <a href="/perfil/like/<%= frases[frases.length - 5].id %>">Curtir</a>
+                    <p>Likes : <%= frases[frases.length - 5].like %>
+                    </p>
+                  </div>
+                  <% }%>
+                    <% if(typeof frases[frases.length - 6].frase==='undefined' ){ %>
+                      <div class="frases">
+                        <p>
+                          Poste novas frases :)
+                        </p>
+                      </div>
+                      <% } else { %>
+                        <div class="frases">
+                          <p>
+                            <%= frases[frases.length - 6].frase %>
+                          </p>
+                          <p>
+                            <%= frases[frases.length - 6].user %>
+                          </p>
+                          <a href="/perfil/like/<%= frases[frases.length - 6].id %>">Curtir</a>
+                          <p>Likes : <%= frases[frases.length - 6].like %>
+                          </p>
+                        </div>
+                        <% }%>
       </div>
       <div>
-        <div class="frases">
-          <p>frase do usuario</p>
-          <p>usuario</p>
-          <button>curtir</button>
-        </div>
-        <div class="frases">
-          <p>frase do usuario</p>
-          <p>usuario</p>
-          <button>curtir</button>
-        </div>
-        <div class="frases">
-          <p>frase do usuario</p>
-          <p>usuario</p>
-          <button>curtir</button>
-        </div>
+        <% if(typeof frases[frases.length - 7].frase==='undefined' ){ %>
+          <div class="frases">
+            <p>
+              Poste novas frases :)
+            </p>
+          </div>
+          <% } else { %>
+            <div class="frases">
+              <p>
+                <%= frases[frases.length - 7].frase %>
+              </p>
+              <p>
+                <%= frases[frases.length - 7].user %>
+              </p>
+              <a href="/perfil/like/<%= frases[frases.length - 7].id %>">Curtir</a>
+              <p>Likes : <%= frases[frases.length - 7].like %>
+              </p>
+            </div>
+            <% }%>
+              <% if(typeof frases[frases.length - 8].frase==='undefined' ){ %>
+                <div class="frases">
+                  <p>
+                    Poste novas frases :)
+                  </p>
+                </div>
+                <% } else { %>
+                  <div class="frases">
+                    <p>
+                      <%= frases[frases.length - 8].frase %>
+                    </p>
+                    <p>
+                      <%= frases[frases.length - 8].user %>
+                    </p>
+                    <a href="/perfil/like/<%= frases[frases.length - 8].id %>">Curtir</a>
+                    <p>Likes : <%= frases[frases.length - 8].like %>
+                    </p>
+                  </div>
+                  <% }%>
+                    <% if(typeof frases[frases.length - 9].frase==='undefined' ){ %>
+                      <div class="frases">
+                        <p>
+                          Poste novas frases :)
+                        </p>
+                      </div>
+                      <% } else { %>
+                        <div class="frases">
+                          <p>
+                            <%= frases[frases.length - 9].frase %>
+                          </p>
+                          <p>
+                            <%= frases[frases.length - 9].user %>
+                          </p>
+                          <a href="/perfil/like/<%= frases[frases.length - 9].id %>">Curtir</a>
+                          <p>Likes : <%= frases[frases.length - 9].like %>
+                          </p>
+                        </div>
+                        <% }%>
       </div>
     </div>
   </main>
