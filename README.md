@@ -34,4 +34,6 @@ Desenvolver a API de um produto similar ao Pensador. O objetivo é que usuários
 
 Instale os requisitos
 
-1 - No terminal abra a pasta raiz do projeto. E execute: npm start
+ No terminal abra a pasta raiz do projeto. E execute: npm start
+ 
+ Em seguida, carregue http://localhost:3000/ em um navegador para visualizar a saída
