@@ -1,1 +1,56 @@
-[{"id":1,"user":"Aristóteles","frase":"O ignorante afirma, o sábio duvida, o sensato reflete.","like":0},{"id":2,"user":"Confúcio","frase":"Para quê preocuparmo-nos com a morte? A vida tem tantos problemas que temos de resolver primeiro..","like":1},{"id":3,"user":"Mario Quintana","frase":"Dizes que a beleza não é nada? Imagina um hipopótamo com alma de anjo... Sim, ele poderá convencer os outros de sua angelitude - mas que trabalheira!","like":3},{"id":4,"user":"William Shakespeare","frase":"Sabemos o que somos, mas não sabemos o que poderemos ser.","like":1},{"id":5,"user":"Chuang Tzu","frase":"Se a tranquilidade da água permite refletir as coisas, o que não poderá a tranquilidade do espírito?","like":2},{"id":6,"user":"Bob Marley","frase":"Deus me enviou à terra com uma missão. Só Ele pode me deter, os homens nunca poderão.","like":4},{"id":7,"user":"William Shakespeare","frase":"Nossas dúvidas são traidoras e nos fazem perder o que, com frequência, poderíamos ganhar, por simples medo de arriscar.","like":3},{"id":8,"user":"William James","frase":"Pessimismo leva à fraqueza, otimismo ao poder.","like":3},{"id":9,"user":"Friedrich Nietzsche","frase":"Fiquei magoado, não por me teres mentido, mas por não poder voltar a acreditar-te.","like":5},{"like":0},{"like":0},{"like":0},{"like":0},{"like":0},{"like":0},{"like":0},{"like":0},{"like":1},{"like":0},{"like":0},{"like":0},{"like":0},{"like":0},{"like":0},{"like":0},{"like":0},{"like":0},{"like":0},{"like":0},{"like":0},{"like":0},{"like":0},{"like":1},{"like":1},{"like":0},{"like":0},{"like":1},{"like":0},{"id":39,"user":"jonas","frase":"dasd","like":1},{"id":40,"user":"jonas","frase":"dsad","like":0}]
+[
+    {
+        "id": 1,
+        "user": "Aristóteles",
+        "frase": "O ignorante afirma, o sábio duvida, o sensato reflete.",
+        "like": 0
+    },
+    {
+        "id": 2,
+        "user": "Confúcio",
+        "frase": "Para quê preocuparmo-nos com a morte? A vida tem tantos problemas que temos de resolver primeiro..",
+        "like": 1
+    },
+    {
+        "id": 3,
+        "user": "Mario Quintana",
+        "frase": "Dizes que a beleza não é nada? Imagina um hipopótamo com alma de anjo... Sim, ele poderá convencer os outros de sua angelitude - mas que trabalheira!",
+        "like": 3
+    },
+    {
+        "id": 4,
+        "user": "William Shakespeare",
+        "frase": "Sabemos o que somos, mas não sabemos o que poderemos ser.",
+        "like": 1
+    },
+    {
+        "id": 5,
+        "user": "Chuang Tzu",
+        "frase": "Se a tranquilidade da água permite refletir as coisas, o que não poderá a tranquilidade do espírito?",
+        "like": 2
+    },
+    {
+        "id": 6,
+        "user": "Bob Marley",
+        "frase": "Deus me enviou à terra com uma missão. Só Ele pode me deter, os homens nunca poderão.",
+        "like": 4
+    },
+    {
+        "id": 7,
+        "user": "William Shakespeare",
+        "frase": "Nossas dúvidas são traidoras e nos fazem perder o que, com frequência, poderíamos ganhar, por simples medo de arriscar.",
+        "like": 3
+    },
+    {
+        "id": 8,
+        "user": "William James",
+        "frase": "Pessimismo leva à fraqueza, otimismo ao poder.",
+        "like": 3
+    },
+    {
+        "id": 9,
+        "user": "Friedrich Nietzsche",
+        "frase": "Fiquei magoado, não por me teres mentido, mas por não poder voltar a acreditar-te.",
+        "like": 5
+    }
+]
