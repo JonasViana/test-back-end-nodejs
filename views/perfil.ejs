@@ -25,7 +25,7 @@
             <% if(typeof usuario==='undefined' ){ %>
                 <a class="btn" href="/login">Login</a>
                 <% } else { %>
-                    <h2>Olá <a href="/perfil">
+                    <h2>Olá <a class="userName"  href="/perfil">
                             <%= usuario.usuario %>
                         </a>
                     </h2>
@@ -47,7 +47,7 @@
             <h2>Ultimo Post</h2>
             <div class="frases">
                 <% if(typeof frases.filter(frases=> frases.user == usuario.usuario).at(-1) === "undefined" ){ %>
-                    <p>Poste novas frases e ideias :)</p>
+                    <p>Poste novas frases e ideias <a href="/post"><strong>aqui</strong></a> :)</p>
                     <% } else { %>
                         <p>
                             <%= frases.filter(frases=> frases.user == usuario.usuario).at(-1).frase %>
@@ -57,7 +57,7 @@
             </div>
             <div class="frases">
                 <% if(typeof frases.filter(frases=> frases.user == usuario.usuario).at(-2) === "undefined"){ %>
-                    <p>Poste novas frases e ideias :)</p>
+                    <p>Poste novas frases e ideias <a href="/post"><strong>aqui</strong></a> :)</p>
                     <% } else { %>
                         <p>
                             <%= frases.filter(frases=> frases.user == usuario.usuario).at(-2).frase %>
@@ -68,7 +68,7 @@
             </div>
             <div class="frases">
                 <% if(typeof frases.filter(frases=> frases.user == usuario.usuario).at(-3) === "undefined" ){ %>
-                    <p>Poste novas frases e ideias :)</p>
+                    <p>Poste novas frases e ideias <a href="/post"><strong>aqui</strong></a> :)</p>
                     <% } else { %>
                         <p>
                             <%= frases.filter(frases=> frases.user == usuario.usuario).at(-3).frase %>

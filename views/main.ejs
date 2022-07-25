@@ -25,7 +25,7 @@
       <% if(typeof usuario==='undefined' ){ %>
         <a class="btn" href="/login">Login</a>
         <% } else { %>
-          <h2>Olá <a href="/perfil">
+          <h2>Olá <a class="userName" href="/perfil">
               <%= usuario.usuario %>
             </a>
           </h2>
@@ -36,7 +36,7 @@
   <main class="main__frases">
     <div class="titulo__frases">
       <h1>Frases de nossos usuarios</h1>
-      <p>Poste suas ideias <a href="/post">aqui</a></p>
+      <p>Poste suas ideias <a href="/post"><strong>aqui</strong></a></p>
     </div>
     <div class="lista__frases">
       <div>

@@ -24,7 +24,7 @@
             <% if(typeof usuario==='undefined' ){ %>
                 <a class="btn" href="/login">Login</a>
                 <% } else { %>
-                    <h2>Olá <a href="/perfil"><%= usuario.usuario %></a>
+                    <h2>Olá <a class="userName"  href="/perfil"><%= usuario.usuario %></a>
                     </h2>
                     <a class="logout" href="/main/logout">Logout</a>
                     <% }%>

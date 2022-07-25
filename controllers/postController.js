@@ -6,7 +6,7 @@ let postController = {
         const usuario = req.session.usuario
 
         if (!usuario) {
-            return res.render('post', { erro: 'Faça o login para postar suas frases' })
+            return res.render('login', { erro: 'Faça o login para postar suas frases' })
         }
 
         const { frase } = req.body
@@ -37,6 +37,9 @@ let postController = {
     like: (req,res) => {
         const { id } = req.params
         const usuario = req.session.usuario
+        if(!usuario) {
+            return res.render('login', { erro: 'Faça o login para curtir frases'} )
+        }
         const frase = frases.filter(frases=> frases.id == id)
         const likeFrase = frase.find(frase => frase.id == id)
         likeFrase.like = likeFrase.like +1
