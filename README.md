@@ -25,7 +25,7 @@ Desenvolver a API de um produto similar ao Pensador. O objetivo é que usuários
 - node ( npm install )
 - bcrypt ( npm install bcrypt ) Uma biblioteca para ajudá-lo a fazer hash de senhas.
 - body-parser ( npm install body-parser ) Middleware de análise do corpo do Node.js.
-- cookie-parser (npm install cookie-parser) Analise o Cookiecabeçalho e preencha req.cookiescom um objeto codificado pelos nomes dos cookies.
+- cookie-parser (npm install cookie-parser) Analise o Cookie cabeçalho e preencha req.cookies com um objeto codificado pelos nomes dos cookies.
 - express ( npm install express --save ) O Express é um framework para aplicativo da web do Node.js mínimo e flexível que fornece um conjunto robusto de recursos para aplicativos web e móvel.
 - express-session ( npm install express-session ) Caso não tenha sido instalado na instalação do express.
 - express-validator ( npm install --save express-validator ) express-validator é um conjunto de middlewares express.js que envolve funções validator e sanitizador validator.js.
